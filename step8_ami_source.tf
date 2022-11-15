@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "ca-central-1"
+  region = "ca-central-1" /*kann mann in belibigen Regione anschauen*/
 }
 
 data "aws_ami" "latest_ubuntu" {
@@ -11,12 +11,12 @@ data "aws_ami" "latest_ubuntu" {
   }
 }
 
-/*data "aws_ami" "latest_amazon_linux" {
+data "aws_ami" "latest_amazon_linux" {
   owners      = ["137112412989"]
   most_recent = true
   filter {
     name   = "name"
-    values = ["amzn2-ami-kernel-5.10-hvm-*-x86_64_gp2"]
+    values = ["amzn2-ami-kernel-5.10-hvm-*-x86_64-gp2"]
   }
 }
 
@@ -26,14 +26,14 @@ output "latest_amazon_linux_ami_id" {
 
 output "latest_amazon_linux_ami_name" {
   value = data.aws_ami.latest_amazon_linux.name
-}*/
+}
 
 data "aws_ami" "latest_windows_2016" {
   owners      = ["amazon"]
   most_recent = true
   filter {
     name   = "name"
-    values = ["amazon/Windows_Server-2016-English-Full-Base-*"]
+    values = ["Windows_Server-2016-English-Full-Base-*"]
   }
 }
 
