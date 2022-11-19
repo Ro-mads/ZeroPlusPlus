@@ -1,4 +1,4 @@
-# Variables 
+# Variables
 
 
 provider "aws" {
@@ -97,3 +97,8 @@ variable "common_tags" {
   }
   type = map(any)
 }*/
+
+// chenge variable | terraform apply -var="region=us-east-1"
+// change 2 variables | -var="instance_type=t2.micro"
+// export TF_VAR_region=us-west-2 | export TF_VAR_instance_type=t2.small (unset TF_VAR , unset TF_VAR withdrow from export)
+//
