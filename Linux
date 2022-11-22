@@ -1,9 +1,0 @@
-#grubby --update-kernel=ALL --args="video=hyperv_fb:1600x900" resolution Hyper-V
-#
-#new branch empty 
-#git checkout --orphan NEW_BRANCH && git reset --hard
-#
-#rename file
-#mv file1.txt file2.txt
-#
-#
