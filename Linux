@@ -5,4 +5,30 @@ grubby --update-kernel=ALL --args="video=hyperv_fb:1600x900" resolution Hyper-V
 #
 #push branch
 #git push origin "branche"
+
+#Docker Installation
+
+Sudoers group root> sudo usermod -aG wheel "user"
+
+sudo yum update
+
+//set up Repo
+
+sudo yum install -y yum-utils
+sudo yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+
+sudo yum install docker-ce
+
+sudo systemctl start docker
+
+sudo docker run hello-world
+
+sudo docker ps
+
+sudo docker images
+
+
+
 #
