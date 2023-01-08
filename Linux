@@ -31,4 +31,7 @@ sudo docker images
 
 
 
+#cp -R Start18/ Start/19 copy Direcrory with -R recursive.
+#
+#git reset --hard <commit ID> remove commit.
 #
